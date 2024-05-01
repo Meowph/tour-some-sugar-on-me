@@ -6,7 +6,7 @@ const bands = getBands()
 
 
 const findVenues = (booked, allVenues) => {
-    let venuesBooked = null
+    let venuesBooked = " "
 
     for (const venue of allVenues) {
         if (venue.id === booked.venueId) {
@@ -17,10 +17,10 @@ const findVenues = (booked, allVenues) => {
 }
 
 const findBands = (booked, allBands) => {
-    let currentBands = []
+    let currentBands = " "
 
     for (const band of allBands) {
-        if (band.id === booked.bandId) {
+        if (band.name === booked.bandName) {
           currentBands = bands
         }
     }
